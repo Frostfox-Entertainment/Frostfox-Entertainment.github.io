@@ -4,12 +4,519 @@
     <head>
         <link rel="stylesheet" href="https://use.typekit.net/ryw6wio.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/LogoWithRounding.png">
         <title>Frostfox Entertainment</title>
         <meta charset="UTF-8">
     </head>
 
     <body>
-        <h1>Frostfox</h1>
-        <p>ENTERTAINMENT</p>
+        <nav>
+            <div class="nav-brand">
+                <h1>Frostfox</h1>
+                <p>ENTERTAINMENT</p>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Welcome to Frostfox Entertainment</h2>
+                <p>Building engaging games and powerful tools on and for Godot</p>
+                <a href="#products" class="hero-button">View Our Work</a>
+            </div>
+
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>Frostfox Entertainment is a Finland-based game development studio specializing in engaging gaming experiences and development tools for the Godot engine. Founded by two first-year software development students, we are driven by our passion for games and use Godot exclusively for all our game and plugin development.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4</h3>
+                            <p>Products in Development</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Products Near Release</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2026</h3>
+                            <p>Founded</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                
+                <div class="featured-product" data-product="multiuser">
+                    <div class="product-content">
+                        <span class="badge">Featured - Coming Soon</span>
+                        <h3>Multiuser</h3>
+                        <p class="product-description">Real-time collaborative editing for teams. Work together seamlessly on the same project with instant synchronization and conflict-free collaboration.</p>
+                        <div class="product-features">
+                            <div class="feature">
+                                <h4>Real-Time Sync</h4>
+                                <p>See changes instantly as your team edits</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Team Management</h4>
+                                <p>Organize permissions and roles effortlessly</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Conflict Resolution</h4>
+                                <p>Smart merging prevents overwrites</p>
+                            </div>
+                        </div>
+                        <div class="featured-buttons">
+                            <button class="learn-more-btn featured-learn-more">Learn More</button>
+                            <a href="#beta" class="cta-button">Join Beta Testing</a>
+                        </div>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Multiuser Plugin">
+                    </div>
+                </div>
+
+                <h3 class="games-title">Games in Development</h3>
+                <div class="products-grid">
+                    <div class="product-card" data-game="arctic-racer">
+                        <div class="product-card-image">
+                            <img src="https://picsum.photos/400/300?random=2" alt="Game Title 1">
+                            <span class="status-badge">In Development</span>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Game 1</h4>
+                            <p>Lorem ipsum dolor sit amet</p>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-game="frost-strategy">
+                        <div class="product-card-image">
+                            <img src="https://picsum.photos/400/300?random=3" alt="Game Title 2">
+                            <span class="status-badge">In Development</span>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Game 2</h4>
+                            <p>Consectetur adipiscing elit sed do</p>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-game="snowfall-adventure">
+                        <div class="product-card-image">
+                            <img src="https://picsum.photos/400/300?random=4" alt="Game Title 3">
+                            <span class="status-badge">In Development</span>
+                        </div>
+                        <div class="product-card-content">
+                            <h4>Game 3</h4>
+                            <p>Eiusmod tempor incididunt ut labore</p>
+                            <button class="learn-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="multiuser-modal" class="game-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Multiuser Plugin</h2>
+                    <span class="modal-badge">Featured - Coming Soon</span>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3>About the Plugin</h3>
+                        <p>Multiuser is a revolutionary collaborative editing plugin that transforms how development teams work together. Built for modern game development workflows, it enables seamless real-time collaboration on projects of any size. Whether you're working with a small indie team or managing a large studio, Multiuser keeps everyone in sync without the headaches of traditional version control conflicts.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Real-Time Synchronization:</strong> See your teammates' changes instantly as they work, with sub-second latency</li>
+                            <li><strong>Intelligent Conflict Resolution:</strong> Advanced algorithms automatically merge changes and prevent overwrites</li>
+                            <li><strong>Team Management:</strong> Granular permission controls, role-based access, and team organization tools</li>
+                            <li><strong>Change Tracking:</strong> Complete history of all modifications with rollback capabilities</li>
+                            <li><strong>Performance Optimized:</strong> Works smoothly even with large projects and multiple concurrent users</li>
+                            <li><strong>Presence Indicators:</strong> See who's online, what they're editing, and where they're working in real-time</li>
+                            <li><strong>Offline Mode:</strong> Continue working when disconnected, with automatic sync when reconnected</li>
+                            <li><strong>Cloud Integration:</strong> Secure cloud storage with enterprise-grade encryption</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-screenshots">
+                        <h3>Screenshots</h3>
+                        <div class="screenshot-grid">
+                            <img src="https://picsum.photos/300/200?random=14" alt="Screenshot 1">
+                            <img src="https://picsum.photos/300/200?random=15" alt="Screenshot 2">
+                            <img src="https://picsum.photos/300/200?random=16" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Platform</h4>
+                                <p>Game Engines (Multi-platform)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Compatibility</h4>
+                                <p>Major Game Engines</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Pricing</h4>
+                                <p>Free Beta / Subscription</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Release</h4>
+                                <p>Beta Q2 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-cta">
+                        <h3>Join the Beta Program</h3>
+                        <p>Be among the first to experience the future of collaborative game development. Beta testers get lifetime discounts and early access to new features.</p>
+                        <a href="#beta" class="modal-cta-button">Sign Up for Beta Access</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="arctic-racer-modal" class="game-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Game 1</h2>
+                    <span class="modal-badge">In Development</span>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3>About the Game</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Feature One:</strong> Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                            <li><strong>Feature Two:</strong> Sed do eiusmod tempor incididunt ut labore et dolore</li>
+                            <li><strong>Feature Three:</strong> Ut enim ad minim veniam quis nostrud exercitation</li>
+                            <li><strong>Feature Four:</strong> Duis aute irure dolor in reprehenderit in voluptate</li>
+                            <li><strong>Feature Five:</strong> Excepteur sint occaecat cupidatat non proident</li>
+                            <li><strong>Feature Six:</strong> Sunt in culpa qui officia deserunt mollit anim</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-screenshots">
+                        <h3>Screenshots</h3>
+                        <div class="screenshot-grid">
+                            <img src="https://picsum.photos/300/200?random=5" alt="Screenshot 1">
+                            <img src="https://picsum.photos/300/200?random=6" alt="Screenshot 2">
+                            <img src="https://picsum.photos/300/200?random=7" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <h3>Development Info</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Platform</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Genre</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Players</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Release</h4>
+                                <p>TBA 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frost-strategy-modal" class="game-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Game 2</h2>
+                    <span class="modal-badge">In Development</span>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3>About the Game</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Feature One:</strong> Sed ut perspiciatis unde omnis iste natus error</li>
+                            <li><strong>Feature Two:</strong> Totam rem aperiam eaque ipsa quae ab illo</li>
+                            <li><strong>Feature Three:</strong> Nemo enim ipsam voluptatem quia voluptas sit</li>
+                            <li><strong>Feature Four:</strong> Neque porro quisquam est qui dolorem ipsum</li>
+                            <li><strong>Feature Five:</strong> Ut enim ad minima veniam quis nostrum</li>
+                            <li><strong>Feature Six:</strong> Quis autem vel eum iure reprehenderit qui</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-screenshots">
+                        <h3>Screenshots</h3>
+                        <div class="screenshot-grid">
+                            <img src="https://picsum.photos/300/200?random=8" alt="Screenshot 1">
+                            <img src="https://picsum.photos/300/200?random=9" alt="Screenshot 2">
+                            <img src="https://picsum.photos/300/200?random=10" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <h3>Development Info</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Platform</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Genre</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Players</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Release</h4>
+                                <p>TBA 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="snowfall-adventure-modal" class="game-modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-header">
+                    <h2>Game 3</h2>
+                    <span class="modal-badge">In Development</span>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="modal-description">
+                        <h3>About the Game</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Similique sunt in culpa qui officia deserunt mollitia animi id est laborum et dolorum fuga.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Feature One:</strong> At vero eos et accusamus et iusto odio dignissimos</li>
+                            <li><strong>Feature Two:</strong> Qui blanditiis praesentium voluptatum deleniti atque</li>
+                            <li><strong>Feature Three:</strong> Quos dolores et quas molestias excepturi sint</li>
+                            <li><strong>Feature Four:</strong> Similique sunt in culpa qui officia deserunt</li>
+                            <li><strong>Feature Five:</strong> Mollitia animi id est laborum et dolorum fuga</li>
+                            <li><strong>Feature Six:</strong> Temporibus autem quibusdam et aut officiis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-screenshots">
+                        <h3>Screenshots</h3>
+                        <div class="screenshot-grid">
+                            <img src="https://picsum.photos/300/200?random=11" alt="Screenshot 1">
+                            <img src="https://picsum.photos/300/200?random=12" alt="Screenshot 2">
+                            <img src="https://picsum.photos/300/200?random=13" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <h3>Development Info</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <h4>Platform</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Genre</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Players</h4>
+                                <p>TBA</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Release</h4>
+                                <p>TBA 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="beta" class="beta-section">
+            <div class="container">
+                <h2 class="section-title">Join Beta Testing</h2>
+                <p class="beta-intro">Be among the first to experience our latest products. Sign up for beta access to Multiuser and our upcoming games.</p>
+                
+                <form id="betaForm" class="beta-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product">Product Interest</label>
+                        <select id="product" name="product" required>
+                            <option value="">Select a product</option>
+                            <option value="multiuser">Multiuser Plugin</option>
+                            <option value="arctic-racer">Arctic Racer</option>
+                            <option value="frost-strategy">Frost Strategy</option>
+                            <option value="snowfall-adventure">Snowfall Adventure</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Development Experience</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">Select your experience level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                            <option value="professional">Professional</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+                
+                <div id="betaSuccess" class="success-message" style="display: none;">
+                    <h3>Thank you for your interest!</h3>
+                    <p>We'll contact you soon with beta access details.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Have questions or want to collaborate? We'd love to hear from you.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <h4>Email</h4>
+                                <a href="mailto:frostfox.ent@gmail.com">frostfox.ent@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    
+                    <div id="contactSuccess" class="success-message" style="display: none;">
+                        <h3>Message Sent!</h3>
+                        <p>We'll get back to you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Frostfox</h3>
+                        <p>ENTERTAINMENT</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://discord.gg/frostfox" target="_blank" rel="noopener noreferrer">Discord</a> <!--Ei oo discordii nii laitoin vaan randomin-->
+                        <a href="https://www.youtube.com/@FrostFox-entertainment" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="https://frostfox-entertainment.github.io/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Frostfox Entertainment. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
