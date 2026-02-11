@@ -19,14 +19,14 @@ html {
 
 body {
     font-family: aileron, sans-serif;
-    background: #e8f4f8;
+    background: #ffffff;
     color: #1a3a52;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 nav {
-    background: #ffffff;
+    background: #73b7cc;
     padding: 20px 50px;
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@ nav a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background: #4a9eff;
+    background: #30b7e0;
     transition: width 0.3s ease;
 }
 
