@@ -8,14 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hide scrollbars but keep scrolling functionality */
 * {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 *::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
     background: #e8f4f8;
     color: #1a3a52;
     min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 nav {
@@ -211,7 +210,6 @@ nav a:hover::after {
     color: #5a7a92;
 }
 
-/* Products Section */
 .products-section {
     padding: 100px 50px 80px;
     background: #e8f4f8;
@@ -415,13 +413,13 @@ nav a:hover::after {
     cursor: pointer;
     transition: background 0.3s ease;
     width: 100%;
+    height: 84px;
 }
 
 .learn-more-btn:hover {
     background: #3a8eef;
 }
 
-/* Beta Section */
 .beta-section {
     padding: 100px 50px;
     background: #ffffff;
@@ -511,7 +509,6 @@ nav a:hover::after {
     color: #5a7a92;
 }
 
-/* Contact Section */
 .contact-section {
     padding: 100px 50px;
     background: #e8f4f8;
@@ -564,7 +561,6 @@ nav a:hover::after {
     box-shadow: 0 4px 20px rgba(74, 158, 255, 0.1);
 }
 
-/* Footer */
 .footer {
     background: #1a3a52;
     color: #ffffff;
@@ -621,7 +617,6 @@ nav a:hover::after {
     font-size: 0.9em;
 }
 
-/* Game Modals */
 .game-modal {
     display: none;
     position: fixed;
@@ -651,8 +646,8 @@ nav a:hover::after {
     overflow-y: auto;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
     animation: slideDown 0.3s ease;
-    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iOS */
-    overscroll-behavior: contain; /* Prevent scroll chaining */
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 @keyframes slideDown {
@@ -859,7 +854,6 @@ nav a:hover::after {
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
-/* Responsive Design for Modals */
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
