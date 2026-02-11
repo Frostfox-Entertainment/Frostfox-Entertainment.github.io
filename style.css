@@ -19,14 +19,14 @@ html {
 
 body {
     font-family: aileron, sans-serif;
-    background: #308aa8;
+    background: #ffffff;
     color: #1a3a52;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 nav {
-    background: #ffffff;
+    background: #73b7cc;
     padding: 20px 50px;
     position: fixed;
     top: 0;
