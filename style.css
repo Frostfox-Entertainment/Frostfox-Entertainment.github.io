@@ -590,12 +590,7 @@ nav a:hover::after {
     color: #b8d8e8;
 }
 
-.footer-links {
-    display: flex;
-    gap: 30px;
-}
-
-.footer-links {
+.footer-links svg {
     color: #b8d8e8;
     text-decoration: none;
     font-family: aileron, sans-serif;
