@@ -592,8 +592,6 @@ nav a:hover::after {
 
 .footer-links svg {
     color: #b8d8e8;
-    text-decoration: none;
-    font-family: aileron, sans-serif;
     transition: color 0.3s ease;
 }
 
