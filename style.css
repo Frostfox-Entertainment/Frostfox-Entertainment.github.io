@@ -606,6 +606,21 @@ nav a:hover::after {
     color: #ffffff;
 }
 
+
+
+
+
+.footer-imglinks {
+     width: 50px; height: 50px; transition: 0.3s; } .icon:hover svg { transform: scale(1.2) rotate(10deg); fill: #00adee; 
+}
+
+
+
+
+
+
+
+
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
