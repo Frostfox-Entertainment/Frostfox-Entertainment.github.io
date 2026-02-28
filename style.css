@@ -595,21 +595,16 @@ nav a:hover::after {
     gap: 30px;
 }
 
-.footer-links a {
+.footer-links {
     color: #b8d8e8;
     text-decoration: none;
     font-family: aileron, sans-serif;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer-links:hover svg {
     color: #ffffff;
 }
-
-
-
-
-
 
 .footer-bottom {
     text-align: center;
