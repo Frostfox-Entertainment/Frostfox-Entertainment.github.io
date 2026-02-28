@@ -608,7 +608,8 @@ nav a:hover::after {
 
 
 
-.icon {
+.footer-imglinks {
+  color:#ffffff;
   width: 40px;
   height: 40px;
   margin: 8px;
