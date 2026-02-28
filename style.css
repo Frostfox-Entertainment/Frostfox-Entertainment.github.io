@@ -610,11 +610,17 @@ nav a:hover::after {
 
 
 
-.footer-imglinks {
-     width: 50px; height: 50px; transition: 0.3s; } .icon:hover svg { transform: scale(1.2) rotate(10deg); fill: #00adee; 
+
+.footer-imglinks svg {
+     color: #ffffff
 }
 
+.footer-imglinks svg {
+     width: 50px; height: 50px; transition: 0.3s; 
+}
 
+.footer-imglinks svg { transform: scale(1.2) rotate(10deg); fill: #00adee; 
+}
 
 
 
