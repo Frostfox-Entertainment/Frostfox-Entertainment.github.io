@@ -612,6 +612,9 @@ nav a:hover::after {
     color: #ffffff;
 }
 
+.footer-imglinks:hover svg {
+    color: #000000;
+}
 
 
 .footer-bottom {
