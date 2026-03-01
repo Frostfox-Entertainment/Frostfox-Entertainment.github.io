@@ -467,7 +467,7 @@ nav a:hover::after {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #4a9eff;
+    border-color: #1581da;
 }
 
 .submit-button {
@@ -590,12 +590,27 @@ nav a:hover::after {
     color: #b8d8e8;
 }
 
-.footer-links svg {
+.footer-links {
     color: #b8d8e8;
+    display: flex;
+    gap: 20px;
 }
 
-.footer-links:hover svg {
+.footer-links a {
+    display: inline-flex;
+}
+
+.footer-links svg {
+    color: #b8d8e8;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transition: 0.3;
+}
+
+.footer-links a:hover svg {
     color: #ffffff;
+    transform: scale(1.1);
 }
 
 .footer-bottom {
